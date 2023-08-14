@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Data_binding.MainPage"
+             
+             xmlns:local="clr-namespace:Data_binding"
+                      
+             Title="👥">
+
+    <!-- Llamamos la variable local con el <local:Alumnos/> -->
+    
+    <ContentPage.BindingContext>
+
+        <local:Alumnos/>
+
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout>
+        
+        <!-- Creamos un Entry para ingresar el nombre y definimos sus propiedades -->
+
+        <Entry x:Name="NombreDelAlumno" Text="{Binding Nombre}" Placeholder="Ingrese su nombre" Margin="20,20,20,20"/>
+        
+         <!-- Creamos un Label para imprimir el resultado y defnimos sus propiedades -->
+        
+        <Label HorizontalOptions="CenterAndExpand" Text="{Binding MostrarNombre}" Margin="20,20,20,20"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
+
