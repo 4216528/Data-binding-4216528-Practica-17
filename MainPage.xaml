@@ -8,7 +8,7 @@
              
              xmlns:local="clr-namespace:Data_binding"
                       
-             Title="👥">
+             Title="Nombre 👥">
 
     <!-- Llamamos la variable local con el local:Alumnos -->
     
